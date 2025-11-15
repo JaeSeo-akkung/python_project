@@ -40,19 +40,20 @@ def reset_game():
 
 game_state = "main"  # 가능한 상태: main, playing, finished
 
-# 버튼
+
+
 start_button = pygame.Rect(SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 100)
 retry_button = pygame.Rect(SCREEN_WIDTH - 200, SCREEN_HEIGHT - 100, 150, 50)
 
 # 라면 이미지 로드
 ramen_images = [
-    pygame.image.load("Hururuk/ramen_full.png"),  # 가득 찬 라면
-    pygame.image.load("Hururuk/ramen_half.png"),  # 반쯤 먹은 라면
-    pygame.image.load("Hururuk/ramen_empty.png"), # 빈 그릇
+    pygame.image.load("ramen_full.png"),  # 가득 찬 라면
+    pygame.image.load("ramen_half.png"),  # 반쯤 먹은 라면
+    pygame.image.load("ramen_empty.png"), # 빈 그릇
 ]
 
 # 젓가락 이미지 로드 및 크기 조정
-chopstick_image = pygame.image.load("Hururuk/chopstick.png")
+chopstick_image = pygame.image.load("chopstick.png")
 chopstick_image = pygame.transform.scale(chopstick_image, (500, 350))  # 크기를 조금 더 키움
 chopstick_x = SCREEN_WIDTH // 2
 chopstick_y = SCREEN_HEIGHT // 2 - 200
